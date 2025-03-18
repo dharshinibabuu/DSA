@@ -1,4 +1,9 @@
 //1.Write a program that takes an integer, then a string, then a char from the user and prints them in the screen.
+Input:  2 Name y
+Expected Output:
+2
+Name
+y
 
 import java.util.Scanner;
 class Main{
@@ -10,12 +15,16 @@ class Main{
         System.out.println(b);
         char c=scanner.next().charAt(0);
         System.out.println(c);
+        scanner.close();
        
     }
 }
 
 //2.Write a program to check whether a triangle can be formed with the given values for the angles.
 //If sum of angles is equal to 180, then triangle can be formed, else it can't be formed.
+Input: 45 45 45
+Expected Output: 
+Triangle cannot be formed
 
 import java.util.Scanner;
 class Main {
@@ -31,7 +40,7 @@ class Main {
         else {
             System.out.println("Triangle cannot be formed");
         }
-
+         scanner.close();
     }
 }
 
@@ -41,6 +50,9 @@ Grade B if mark is greater than or equal to 80
 Grade C if mark if greater than or equal to 60
 Grade D if mark if greaer than or equal to 35
 Fail if mark is lesser than 35*/
+Input: 95
+Expected Output:
+Grade A
 
 import java.util.Scanner;
 class Main {
@@ -62,6 +74,7 @@ class Main {
         else {
             System.out.println("Fail");
         }
+         scanner.close();
     }
 }
 
@@ -71,6 +84,9 @@ If size is 30 then its Medium
 If size is 38 then its Large
 If size is 42 then its XLarge
 If size is not any of the above then Invalid.*/
+Input: 29
+Expected Output: 
+Small
 
 import java.util.Scanner;
 class Main {
@@ -97,6 +113,7 @@ class Main {
             default:
                 System.out.println("Invalid size");
         }
+         scanner.close();
     }
 }
 
@@ -123,6 +140,7 @@ class Main {
         for (int i = x; i <= 1000; i += x) {
             System.out.println(i);
         }
+         scanner.close();
     }
 }
 
@@ -135,10 +153,78 @@ class Main {
         String a = scanner.next();
         String b = scanner.next();
         int n = scanner.nextInt();
-        String c = a + "" + b;
+        String c = a + " " + b;
         for (int i = 1; i <= n; i++) {
             System.out.println(c);
         }
+         scanner.close();
+    }
+}
 
+//8.Write a program which takes the following input and prints them one by one. 1. An whole number 2. A letter 3. A number with fractional part 4. A word
+Input Format
+34 S 56.1 PowerRanger
+Constraints
+2 ≤ whole numer ≤ 10^6
+Output Format
+34
+S
+56.1
+PowerRanger
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int a=scanner.nextInt();
+        char b=scanner.next().charAt(0);
+        float c=scanner.nextFloat();
+        String d=scanner.next();
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        scanner.close();
+    }
+}
+
+//9.Write a program to print N numbers starting from 2. Take N as input and print from 2 to N
+Input Format
+6
+Constraints
+3<=N<=10^3
+Output Format
+2 3 4 5 6
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=2;i<=N;i++){
+            System.out.print(i);
+            System.out.print(" ");
+        }
+        scanner.close();
+    }
+}
+
+//10.Write a program which takes a value N and prints the sum of N natural numbers. Natural numbers start from 1.
+Explanation: Sum of natural numbers from 1 to N, here N is 5, so 1+2+3+4+5 is 15. Input N = 5; Expected output : 15
+Input Format
+5
+Constraints
+1<= N <= 10^2
+Output Format
+15
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        int sum=N*(N+1)/2;
+        System.out.println(sum);
+        scanner.close();
     }
 }

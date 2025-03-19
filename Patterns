@@ -312,3 +312,95 @@ public class Main {
         scanner.close();
     }
 }
+
+14.N=5
+12345
+678910
+1112131415
+1617181920
+2122232425
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        int count=1;
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=N;j++){
+                System.out.print(count);
+                    count++;
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+15.N=5
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+*********
+ ******* 
+  *****  
+   ***   
+    *
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=N-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=(2*i)-1;j++){
+            System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=i-1;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=(2*N)-(2*i)+1;j++){
+            System.out.print("*");
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+16.N=5
+12345
+22345
+33345
+44445
+55555
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int n=scanner.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(j<=i){
+                    System.out.print(i);
+                   }
+                else{
+                    System.out.print(j);
+                    }
+               }
+             System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+

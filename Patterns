@@ -1,0 +1,314 @@
+1.N=4
+****
+****
+****
+****
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=N;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+        }
+        scanner.clnose();
+    }
+}
+
+2.N=4
+1
+12
+123
+1234
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=i;j++){
+            System.out.print(j);
+        }
+        System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+3.N=4
+1234
+1234
+1234
+1234
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=N;j++){
+            System.out.print(j);
+        }
+        System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+4.N=4
+* ** *** **** 
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+        System.out.print(" ");
+        }
+        scanner.close();
+    }
+}
+
+5.N=4
+1234
+123
+12
+1
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=N-i+1;j++){
+            System.out.print(j);
+        }
+        System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+6.N=4
+****
+***
+**
+*
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=N-i+1;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+7.N=4
+*
+**
+***
+****
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+8.N=4
+*
+**
+***
+****
+***
+**
+*
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+        }
+        for(int i=1;i<=N;i++){
+            for(int j=1;j<=N-i;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+        }
+        
+        scanner.close();
+    }
+}
+
+9.N=4
+   *
+  ***
+ *****
+*******
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= N - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
+
+10.N=4
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+   import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        for (int i = 1; i <= N - 1; i++) {
+            for (int j = 1; j <= N - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * N - (2 * i - 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        scanner.close();
+    }
+}
+
+11.N=4
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int count = 1;
+        for (int i = 0; i <= N; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(count);
+                System.out.print(" ");
+                count++;
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+}
+
+12.N=4
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int count = 1;
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(count);
+                System.out.print(" ");
+            }
+            count++;
+            System.out.println();
+
+        }
+        scanner.close();
+    }
+}
+
+13.N=4
+*******
+ *****
+  ***
+   *
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * N - (2 * i - 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        scanner.close();
+    }
+}

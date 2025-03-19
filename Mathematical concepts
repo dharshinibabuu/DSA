@@ -1,0 +1,115 @@
+1.To check whether the number is odd or even / To check divisibility.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        if(N%2==0){
+            System.out.println("N is Even");
+        }
+        else{
+            System.out.println("N is Odd");
+        }
+        scanner.close();
+    }
+}
+
+2.To get last digit of a number.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        N=N%10;
+        System.out.println(N);
+        scanner.close();
+    }
+}
+
+3.To go through each digit in a number / Reverse a number given as input.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        while(N>0){
+        System.out.print(N%10);
+        N=N/10;
+        }
+        scanner.close();
+    }
+}
+
+4.To get first digit of a number.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        while(N>=10){
+        N=N/10;
+        }
+        System.out.println(N);
+        }
+        scanner.close();
+    }
+}
+OR
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        while (N > 0) {
+            int ld = N % 10;
+            N = N / 10;
+            if (N == 0) {
+                System.out.println(ld);
+            }
+        }
+        scanner.close();
+    }
+}
+
+5.To count number of digits in the given input.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        int count=0;
+        while(N>0){
+            count=count+1;
+            N=N/10;
+        }
+        System.out.println(count);
+        scanner.close();
+    }
+}
+
+6.To count number of odd digits in the given input.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int N=scanner.nextInt();
+        int count=0;
+        while(N>0){
+            int ld=N%10;
+            N=N/10;
+            if(ld%2!=0){ //(ld%2==0) to count number of even digits.
+                count+=1;
+            }
+        }
+        System.out.println(count);
+        scanner.close();
+    }
+}
+
+7.
